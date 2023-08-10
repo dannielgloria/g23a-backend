@@ -21,8 +21,10 @@ Esta guía proporciona información esencial para estudiantes que deseen aprende
 Aquí aprenderás cómo instalar PostgreSQL y PG Admin en tu sistema:
 
 Referencias:
-- Tutorial de instalación de PostgreSQL: [Enlace](https://www.postgresql.org/download/)
-- Tutorial de instalación de PG Admin: [Enlace](https://www.pgadmin.org/download/)
+- Link de descarga de PostgreSQL: [Enlace](https://www.postgresql.org/download/)
+  - Video tutorial Win 11: [Video](https://www.youtube.com/watch?v=n5Ec9bMouWQ)
+  - Video tutorial MacOS: [Video](https://www.youtube.com/watch?v=QaZrWIvAFsA)
+- Link de descarga de PG Admin: [Enlace](https://www.pgadmin.org/download/)
 
 ## Qué es PG Admin y cómo utilizarlo
 
