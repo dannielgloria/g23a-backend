@@ -1,7 +1,3 @@
-
-Ejercio realizado en clase
-
-``
 -- Crea una tabla
 CREATE TABLE users(
 	nombre VARCHAR(50) NOT NULL,
@@ -27,4 +23,4 @@ DROP TABLE users;
 
 -- Elimina un dato de una tabla
 DELETE FROM users WHERE id_usuario = 2
-``
+
