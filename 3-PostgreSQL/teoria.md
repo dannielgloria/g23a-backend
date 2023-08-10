@@ -53,6 +53,7 @@ Los tipos de datos en PostgreSQL te permiten definir el formato de los valores q
 
 Referencias:
 - Documentación oficial sobre tipos de datos en PostgreSQL: [Enlace](https://www.postgresql.org/docs/current/datatype.html)
+- Documentación extra sobre tipos de datos en PostgreSQL: [Enlace](http://codigoelectronica.com/blog/postgresql-tipo-de-datos)
 
 ## Constraints
 
