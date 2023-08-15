@@ -6,10 +6,21 @@ Objetivo: Practicar el uso de las cláusulas LIMIT y OFFSET para paginar y limit
 
 - Escribe una consulta SQL que seleccione los primeros 5 productos de la tabla productos.
 
-- Escribe otra consulta SQL que seleccione los siguientes 5 productos, es decir, los productos del 6 al 10.
+```SQL
+SELECT * FROM productos LIMIT 10;
+```
+
+- Escribe otra consulta SQL que seleccione los siguientes 5 productos, es decir, los productos del 6 al 11.
+
+```SQL
+SELECT * FROM productos LIMIT 5 OFFSET 5;
+```
 
 - Utiliza la cláusula OFFSET y LIMIT para obtener los siguientes conjuntos de 5 productos, como 11 al 15, 16 al 20, y así sucesivamente.
 
+```SQL
+SELECT * FROM productos LIMIT 5 OFFSET 10;
+```
 
 # Ejercicio 2: WHERE, BETWEEN, IN, LIKE, IS NULL, ORDER BY, DISTINCT, GROUP BY y HAVING
 
@@ -18,7 +29,11 @@ Objetivo: Practicar el uso de diversas cláusulas y operadores en consultas SQL.
 ## Instrucciones:
 
 - Escribe una consulta SQL que seleccione todos los productos cuyo precio unitario esté entre $100 y $200.
-  
+
+```SQL
+SELECT * FROM productos WHERE precio_unidad BETWEEN 100 AND 200;
+```
+
 - Escribe una consulta SQL que seleccione todos los productos cuyo proveedor sea 'Nestlé' o 'Sancor'.
 
 - Escribe una consulta SQL que seleccione todos los productos cuyo nombre contenga la palabra 'Gaseosa'.
