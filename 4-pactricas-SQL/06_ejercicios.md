@@ -35,19 +35,55 @@ SELECT * FROM productos WHERE precio_unidad BETWEEN 100 AND 200;
 ```
 
 - Escribe una consulta SQL que seleccione todos los productos cuyo proveedor sea 'Nestlé' o 'Sancor'.
+- 
+```SQL
+SELECT * FROM productos WHERE marca='Nestl�' OR marca='Sancor';
+
+SELECT * FROM productos WHERE id_proveedor IN (1,3);
+
+SELECT * FROM productos WHERE marca IN ('Nestl�','Sancor');
+```
 
 - Escribe una consulta SQL que seleccione todos los productos cuyo nombre contenga la palabra 'Gaseosa'.
 
+```SQL
+SELECT * FROM productos WHERE nombre LIKE '%Gaseosa%';
+
+SELECT * FROM productos WHERE grupo='Gaseosas';
+```
+
 - Escribe una consulta SQL que seleccione todos los productos que no tengan una imagen asociada (campo imagen sea NULL).
+  
+```SQL
+SELECT * FROM productos WHERE imagen IS NULL;
+```
 
 - Escribe una consulta SQL que seleccione los productos ordenados por su precio unitario de forma descendente.
 
+```SQL
+SELECT * FROM productos ORDER BY precio_unidad DESC;
+```
+
 - Escribe una consulta SQL que seleccione los nombres de proveedores únicos de la tabla proveedores.
+
+```SQL
+SELECT * FROM productos ORDER BY precio_unidad DESC;
+```
 
 - Escribe una consulta SQL que cuente cuántos productos pertenecen a cada grupo (grupo) de la tabla productos.
 
+```SQL
+SELECT grupo, COUNT(*) as cantidad FROM productos
+GROUP BY grupo;
+```
+
 - Escribe una consulta SQL que seleccione los grupos (grupo) de productos cuya cantidad total en stock sea mayor a 1000.
 
+```SQL
+SELECT grupo, SUM(stock) as cantidad_total FROM productos
+GROUP BY grupo
+HAVING SUM(stock) > 1000;
+```
 
 # Ejercicio 3: Aliasing y Subqueries
 
