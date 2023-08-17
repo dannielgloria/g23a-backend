@@ -77,6 +77,10 @@ Los parámetros y las consultas son formas de enviar datos a través de una URL 
 
 El cuerpo de una solicitud HTTP contiene datos que se envían al servidor, generalmente en formato JSON. Para recibir y procesar el cuerpo de una solicitud, puedes usar bibliotecas como `body-parser` (Express.js) o simplemente acceder a `req.body` en frameworks más modernos.
 
+## Status Code
+
+- Enlace para ver todos los status code con gatos como ejemplo [link](https://http.cat/)
+- Enlace para ver todos los status code con perros como ejemplo [link](https://httpstatusdogs.com/)
 
 ### Glosario:
 
