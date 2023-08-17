@@ -20,37 +20,37 @@ app.use(express.json());
 // Endpoint default
 app.get('/', function (request, response) {
   console.log(request.query);
-  response.send('Hola mundo');
+  response.status(200).send({mensaje: 'hola mundo'});
 });
 
 // Endpoint de users get (ejemplo)
 app.get('/users', function (request, response) {
   const users = ['Camila, Felipe, Jason'];
-  response.send(users);
+  response.status(200).send({data: users});
 });
 
 // Endpoint de users get con params (ejemplo)
 app.get('/users/:user_id', function (request, response) {
   console.log(request.params.user_id);
-  response.send('Usuario encontrado');
+  response.status(200).send({mensaje: 'usuario encontrado'});
 });
 
 // Endpoint de users post (ejemplo)
 app.post('/users', function (request, response) {
   if (!request.body.name) {
-    response.send('Por favor envia el usuario a crear');
+    response.status(400).send({error: 'Por favor envia los datos del usuario'});
   }
 
   const userName = request.body.name;
   console.log(userName);
 
-  response.send('Usuario creado');
+  response.status(201).send({mensaje: 'usuario creado'});
 });
 
 // Endpoint de cars post
 app.post('/cars', function (request, response) {
   console.log(request.body.brand);
-  response.send('Carro creado');
+  response.status(201).send({mensaje: 'carro creado'});
 });
 
 // Utilizamos le funcion listen del modulo para correr el servidor
