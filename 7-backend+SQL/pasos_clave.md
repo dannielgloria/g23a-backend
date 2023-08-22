@@ -1,5 +1,9 @@
 # Pasos para tener listo KNEX en dado caso que se pierdan en la clase
 
+0. Inicializar proyecto
+```
+npm init -y
+```
 1. Instala Express.js usando npm:
 ```
 npm i express
@@ -15,10 +19,6 @@ npm i pg
 4. Instala nodemon usando npm:
 ```
 npm i nodemon
-```
-5. Inicializar proyecto
-```
-npm init -y
 ```
 5. Crear archivo knex en carpeta db
 ```
