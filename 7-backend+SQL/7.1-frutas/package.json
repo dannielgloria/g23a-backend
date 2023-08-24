@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "migrate": "npx knex migrate:latest --knexfile ./database/knexfile.js",
     "dev": "nodemon index.js",
