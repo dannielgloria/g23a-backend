@@ -1,10 +1,18 @@
-
+import frutaServices from "../service/fruta.services";
 
 class FrutaController{
 
     async createFrutas(request, response){
         try {
-            const id = await SERVICE;
+            /**
+             * body es
+             * {    nombre:"Banana",
+             *      descripcion:"Banana verde",
+             *      cantidad:2,
+             *      precio: 1
+             * }
+             */
+            const id = await frutaServices.createFruta(request.body);
             request.status(201).json(id);
         } catch (error) {
             console.error(error);
@@ -15,7 +23,7 @@ class FrutaController{
     async getFrutasById(request, response){
         try {
             const id = request.params.id;
-            const fruta = await SERVICE;
+            const fruta = await frutaServices.getFrutaById(id);
             if(!fruta){
                 return response.status(404).send('Fruta not found');
             }           
@@ -30,7 +38,7 @@ class FrutaController{
         try {
             const id = request.params.id;
             const update = request.body;
-            const success = await SERVICE
+            const success = await frutaServices.updateFruta(id,update)
 
             if (!success) {
                 return response.status(404).send('Fruta not found');
@@ -45,7 +53,7 @@ class FrutaController{
     async deleteFruta(request, response){
         try {
             const id = request.params.id;
-            const success = await SERVICE
+            const success = await frutaServices.deleteFruta(id);
 
             if (!success) {
                 return response.status(404).send('Fruta not found');
