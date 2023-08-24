@@ -13,10 +13,10 @@ class FrutaController{
              * }
              */
             const id = await frutaServices.createFruta(request.body);
-            request.status(201).json(id);
+            return response.status(201).json(id);
         } catch (error) {
             console.error(error);
-            response.status(500).send('Internal Server Error');
+            return response.status(500).send('Internal Server Error');
         }
     }
 
@@ -43,7 +43,7 @@ class FrutaController{
             if (!success) {
                 return response.status(404).send('Fruta not found');
             }
-            request.status(201).send('Fruta actualizada');
+            response.status(201).send('Fruta actualizada');
         } catch (error) {
             console.error(error);
             return response.status(500).send('Internal Server Error');
@@ -52,13 +52,15 @@ class FrutaController{
 
     async deleteFruta(request, response){
         try {
+            
             const id = request.params.id;
+            console.log('CHAPULINCOLORADO se ejecuta frutaServices.deleteFruta(id)')
             const success = await frutaServices.deleteFruta(id);
-
+            console.log('CHAPULINCOLORADO finalizo frutaServices.deleteFruta(id)')
             if (!success) {
                 return response.status(404).send('Fruta not found');
             }
-            return request.status(201).send('Fruta eliminada');
+            return response.send('Fruta eliminada');
         } catch (error) {
             console.error(error);
             return response.status(500).send('Internal Server Error');
