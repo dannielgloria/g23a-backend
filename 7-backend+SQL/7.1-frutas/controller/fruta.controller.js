@@ -1,4 +1,4 @@
-import frutaServices from "../service/fruta.services";
+import frutaServices from "../service/fruta.services.js";
 
 class FrutaController{
 

@@ -1,4 +1,4 @@
-import frutaDao from "../dao/fruta.dao"
+import frutaDao from "../dao/fruta.dao.js"
 
 class FrutaService{
     async createFruta(frutaDto){

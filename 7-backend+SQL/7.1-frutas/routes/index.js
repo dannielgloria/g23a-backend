@@ -1,5 +1,5 @@
 import express from "express";
-import frutaController from "../controller/fruta.controller";
+import frutaController from "../controller/fruta.controller.js";
 
 const router = express.Router();
 // Routes = EndPoins
