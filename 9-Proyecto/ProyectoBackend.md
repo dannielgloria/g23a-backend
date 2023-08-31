@@ -24,9 +24,9 @@ El proyecto consiste en crear una API que permita gestionar una tabla en una bas
 
 3. **Base de Datos:** Debes configurar una base de datos PostgreSQL para almacenar los datos. Utiliza Knex.js para definir los esquemas y las migraciones necesarias.
 
-4. **Documentación:** Proporciona documentación clara sobre cómo configurar el proyecto en diferentes entornos y cómo utilizar los endpoints de la API. Puedes utilizar comentarios en el código, un archivo README o una herramienta de documentación como Swagger.
+4. **Documentación (opcional):** Proporciona documentación clara sobre cómo configurar el proyecto en diferentes entornos y cómo utilizar los endpoints de la API. Puedes utilizar comentarios en el código, un archivo README o una herramienta de documentación como Swagger.
 
-5. **Pruebas:** Si es posible, incluye pruebas automatizadas para tus rutas y controladores utilizando herramientas como Jest o Mocha.
+5. **Pruebas (opcional):** Si es posible, incluye pruebas automatizadas para tus rutas y controladores utilizando herramientas como Jest o Mocha.
 
 ## Entrega
 
